@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>dropdown</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mymodal">
+            clickme
+        </button>
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button type="button" class="btn btn-default dropdown-toggle" id="dropdownMenu1"
+                data-toggle="dropdown">Dropdown<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">link</a></li>
+                <li><a href="#">link </a></li>
+                <li><a href="#">link </a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">link </a></li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="nav nav-tabs">
+            <li class="Active"><a href="#tab1" role="tab" data-toggle="tab">home</a></li>
+            <li><a href="#tab2" role="tab" data-toggle="tab">Messages</a></li>
+            <li><a href="#tab3" role="tab" data-toggle="tab">profile</a></li>
+        </div>
+        <br><br>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top"
+            title="this is a tooltip">click me</button>
+        <button type="button" class="btn btn-default" data-toggle="popover" data-content="here is a popover text"
+            title="Popover Text">click me</button>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>$("[data-toggle='tooltip']").tooltip()</script>
+    <script>$("[data-toggle='popover']").popover()</script>
+</body>
+
+</html>

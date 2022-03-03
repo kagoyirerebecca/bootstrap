@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>collapse</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <a class="btn btn-warning" data-toggle="collapse" href="#mycontent">click me</a>
+        <button class="btn btn-default" data-toggle="collapse" data-target="#mycontent">click me</button>
+        <div class="collapse" id="mycontent">
+            <div class="well">
+                text for collapse widget
+            </div>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carrousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                 <img src="img/module_table_top.png" alt="image one">
+                 <div class="carousel-caption">this is image one</div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
